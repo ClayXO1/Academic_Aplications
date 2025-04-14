@@ -5,10 +5,11 @@ package Recursividade;
 
 public class Palindromo {
     public static void main(String[] args){
+        Palindromo p = new Palindromo();
         String palavra= "Arara";
         int t = palavra.length()-1;
         int cont=0;
-        int palindromo= palindromo(palavra,t,cont);
+        int palindromo= p.palindromo(palavra,t,cont);
 
         if(t==palindromo){
             System.out.printf("%s é um palindromo", palavra);
@@ -17,7 +18,7 @@ public class Palindromo {
             System.out.printf("%s não é um palindromo", palavra);
         }
     }
-    public static int palindromo(String p,int i,int c){
+    public int palindromo(String p,int i,int c){
         String a = p.toLowerCase();
         int contador = c;
         int k = i;

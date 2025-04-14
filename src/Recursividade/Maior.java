@@ -5,6 +5,7 @@ public class Maior {
     /* O Programa retorna o maior número armazenado em um vetor de inteiros*/
 
     public  static void main(String[] args) {
+        Maior m = new Maior();
         int[] inteiros = new int[7];
         inteiros[0]= 14;
         inteiros[1]=25;
@@ -21,11 +22,11 @@ public class Maior {
         dec[1]=inteiros.length-1;
         dec[2]= atual;
 
-        maior= maior((int[]) dec[0],(Integer) dec[1],(Integer) dec[2]);
+        maior = m.maior((int[]) dec[0],(Integer) dec[1],(Integer) dec[2]);
         System.out.println(maior);
     }
 
-    public static int maior(int[] i,int p,int a){
+    public int maior(int[] i,int p,int a){
         int maior= 0;
         int atual = a;
         if(i[p]>atual){

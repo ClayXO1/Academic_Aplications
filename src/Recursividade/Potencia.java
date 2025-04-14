@@ -5,11 +5,12 @@ public class Potencia {
     /*O programa realiza a parâmetro entre base(primeiro parâmetro) e
     expoente(segundo parâmetro)*/
 
-    public static void main(String[] args){
-        imprimir(potencia(5,2));
+    public void main(String[] args){
+        Potencia p = new Potencia();
+        p.imprimir(p.potencia(5,2));
     }
 
-    public static int potencia(int b,int e){
+    public int potencia(int b,int e){
         if (e==0){
             return 1;
         }
@@ -19,7 +20,7 @@ public class Potencia {
         return b*potencia(b,e-1);
     }
 
-    public static void imprimir(int msg){
+    public void imprimir(int msg){
         System.out.println(msg);
     }
 }

@@ -5,13 +5,14 @@ public class Fibonacci {
     /* O Programa executa o cálculo de fibonacci para um número passado*/
 
     public static void main(String[] args){
+        Fibonacci fb = new Fibonacci();
         int n =15;
         for(int i=0 ; i<n;n--){
-            imprimir(fibonacci(n));
+            fb.imprimir(fb.fibonacci(n));
         }
     }
 
-    public static int fibonacci(int n){
+    public int fibonacci(int n){
 
         if (n==0){
            return 0;
@@ -22,7 +23,7 @@ public class Fibonacci {
         return fibonacci(n-1)+fibonacci(n-2);
     }
 
-    public static void imprimir(int msg){
+    public void imprimir(int msg){
         System.out.println(msg);
     }
 }

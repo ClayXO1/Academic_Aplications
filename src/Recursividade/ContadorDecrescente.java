@@ -5,16 +5,17 @@ import java.util.Scanner;
 //O programa realiza a contagem decrescente do número inserido pelo usuário até 1.
 
 public class ContadorDecrescente {
+    ContadorDecrescente cd = new ContadorDecrescente();
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int num;
         imprimir("Digite um numero: ");
         num =scan.nextInt();
-        contador(num);
+        cd.contador(num);
 
     }
 
-    public static void contador(int num){
+    public void contador(int num){
 
         if(num < 1){
             return;

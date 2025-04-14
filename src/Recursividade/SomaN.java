@@ -6,10 +6,11 @@ public class SomaN {
     e depois imprime o resultado de todos os números somados*/
 
     public static void main(String[] args){
-        imprimir(somaN(27));
+        SomaN s = new SomaN();
+        s.imprimir(s.somaN(27));
     }
 
-    public static int somaN(int n){
+    public int somaN(int n){
         if(n==0){
             return 0;
         }
@@ -17,7 +18,7 @@ public class SomaN {
         return n + somaN(n - 1);
     }
 
-    public static void imprimir(int msg){
+    public void imprimir(int msg){
         System.out.println(msg);
     }
 }
