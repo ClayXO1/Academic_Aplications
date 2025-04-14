@@ -5,8 +5,8 @@ import java.util.Scanner;
 //O programa realiza a contagem decrescente do número inserido pelo usuário até 1.
 
 public class ContadorDecrescente {
-    ContadorDecrescente cd = new ContadorDecrescente();
     public static void main(String[] args){
+        ContadorDecrescente cd = new ContadorDecrescente();
         Scanner scan = new Scanner(System.in);
         int num;
         imprimir("Digite um numero: ");

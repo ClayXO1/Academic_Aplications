@@ -5,8 +5,8 @@ import java.util.Scanner;
 //O programa realiza a contagem crescente de um até o número inserido pelo usuário
 
 public class ContadorCrescente {
-    ContadorCrescente cc = new ContadorCrescente();
     public static void main(String[] args){
+        ContadorCrescente cc = new ContadorCrescente();
         Scanner scan = new Scanner(System.in);
         int num;
         cc.imprimir("Digite um numero: ");
