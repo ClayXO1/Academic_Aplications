@@ -11,4 +11,5 @@
  
  Estrutura de Dados(ED):
  TDA(Abstração de Classes),
- Recursividade
+ Recursividade,
+ Listas Encadeada e Listas Duplamente Encadeadas(Equivalente à usabilidade do Java collections como Set e List).
